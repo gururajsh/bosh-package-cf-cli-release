@@ -21,15 +21,17 @@ resources:
 - name: cf-cli-release
   type: git
   source:
-    uri: git@github.com:bosh-packages/cf-cli-release
-    private_key: ((release-repo-github-key))
+    uri: git@github.com:cloudfoundry/bosh-package-cf-cli-release.git
+    private_key: |
+      ((release-repo-github-key))
     branch: main
 
 - name: cf-cli-release-final
   type: git
   source:
-    uri: git@github.com:bosh-packages/cf-cli-release
-    private_key: ((release-repo-github-key))
+    uri: git@github.com:cloudfoundry/bosh-package-cf-cli-release.git
+    private_key: |
+      ((release-repo-github-key))
     branch: main
 
 - name: gcp-env
